@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    var x = 5;
+    console.log(++x);
+
+    x = "Javascript";
+
+    x = 5;
+    console.log(x++);
+    console.log("x értéke most:"+x);
+
+    console.log(x--);
+    console.log(x--);
+    console.log("x értéke a végén:"+x);
+
+    var testVar0 = 17;
+    var testVar1 = 2;
+    var Result = testVar0 / testVar1;
+    var resultFloor= Math.floor(Result);
+    var resultRemainder = testVar0 % testVar1;
+    console.log( testVar0 + " / " + testVar1 + " =~ " + resultFloor + "(egész)" + ". A maradék pedig:" + resultRemainder );
+
+    var x = (100 + 50) * 3; //Operator precedence
+
+    /* Operators
+        +	Addition
+        -	Subtraction
+        *	Multiplication
+        **	Exponentiation (ES2016)
+        /	Division
+        %	Modulus (Division Remainder)
+        ++	Increment
+        --	Decrement
+    */
+
+    /* Assignment Operators
+    =	    x = y	    x = y
+    +=	    x += y	    x = x + y
+    -=	    x -= y	    x = x - y
+    *=	    x *= y	    x = x * y
+    /=	    x /= y	    x = x / y
+    %=	    x %= y	    x = x % y
+    **=	    x **= y	    x = x ** y
+    */
+</script>
+
+</body>
+</html>

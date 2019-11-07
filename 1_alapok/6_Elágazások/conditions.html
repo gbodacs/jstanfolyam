@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Klikk a gombra és üdvözöllek:</p>
+
+<button onclick="myFunction()">Üdv neked!</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var hour = new Date().getHours(); 
+  var greeting;
+
+  if (hour < 11) {
+    greeting = "Jó reggelt!";
+  } 
+  /*
+  else if (hour < 14) {
+    greeting = "Szép napot!";
+  }
+  else if (hour < 18) {
+    greeting = "Mosolygós délutánt!";
+  }
+  else {
+    greeting = "Szép estét!";
+  }*/
+  
+  document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+
+</body>
+</html>
