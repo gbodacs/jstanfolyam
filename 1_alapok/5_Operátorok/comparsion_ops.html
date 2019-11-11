@@ -5,10 +5,35 @@
 <script>
     var x = 5;
     var testVar1 = x + 6; //camel case
-    console.log(testVar1);
+    if (x == testVar1)
+        console.log("Egyenlo!");
+    else
+        console.log("Nem egyenlo!");
 
-    var testVar2 = "Szoveges kimenet";
-    console.log(testVar2);
+    if (x == 5)
+        console.log("2Egyenlo!");
+    else
+        console.log("2Nem egyenlo!");
+
+    if (x != 5)
+        console.log("3Nem egyenlo!");
+    else
+        console.log("3Egyenlo!");
+
+    if (x === 5)
+        console.log("4Tipus es ertek is egyezik!");
+    else
+        console.log("4Tipus vagy ertek nem egyenlo!");
+
+    (x == 5)? console.log("ternary operator:true") : console.log("ternary operator:true");
+
+    var stringVar1 = "Szoveges kimenet";
+    var stringVar2 = "Szoveges kimenet2";
+
+    if (stringVar1 > stringVar2)
+        console.log("6-1 nagyobb!");
+    else
+        console.log("6-2 nagyobb!");
 
     /*
         ==	equal to
