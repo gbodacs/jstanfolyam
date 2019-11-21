@@ -43,6 +43,15 @@
 
         fruits[9] = "Melon";    // adds a new element (Lemon) to fruits, with holes!!!
 
+        var i1 = fruits.push("Lemon");
+        var i1 = fruits.pop();
+        var i1 = fruits.shift();
+        var i1 = fruits.unshift("Kiwi");
+
+        fruits.sort();
+        fruits.reverse();
+
+
         // Associative arrays
         //In JavaScript, arrays use numbered indexes.  
         //In JavaScript, objects use named indexes.
@@ -62,15 +71,6 @@
         function isArray(x) {    // use with older browsers
             return x.constructor.toString().indexOf("Array") > -1;
         }
-
-        var i1 = fruits.push("Lemon");
-        var i1 = fruits.pop();
-        var i1 = fruits.shift();
-        var i1 = fruits.unshift("Kiwi");
-
-        fruits.sort();
-        fruits.reverse();
-
     }
 
 
