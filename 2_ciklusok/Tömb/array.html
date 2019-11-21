@@ -7,6 +7,9 @@
     <button type="button" onclick="myFunction()">Nyomj meg</button>
 <script>
     function myFunction() {
+            //Note: Array indexes start with 0.
+            //[0] is the first element. [1] is the second element.
+
         var cars = ["Saab", "Volvo", "BMW"];
         var cars = new Array("Saab", "Volvo", "BMW");
 
@@ -39,11 +42,38 @@
         fruits.push("Lemon");    // adds a new element (Lemon) to fruits
 
         fruits[9] = "Melon";    // adds a new element (Lemon) to fruits, with holes!!!
+
+        // Associative arrays
+        //In JavaScript, arrays use numbered indexes.  
+        //In JavaScript, objects use named indexes.
+
+        var person = [];
+        person["firstName"] = "John";
+        person["lastName"] = "Doe";
+        person["age"] = 46;
+        var x = person.length;     // person.length will return 0
+        var y = person[0];         // person[0] will return undefined
+
+        var type1 = typeof person;
+        var type2 = typeof fruits;
+
+        Array.isArray(fruits);   // ES5 - returns true
+
+        function isArray(x) {    // use with older browsers
+            return x.constructor.toString().indexOf("Array") > -1;
+        }
+
+        var i1 = fruits.push("Lemon");
+        var i1 = fruits.pop();
+        var i1 = fruits.shift();
+        var i1 = fruits.unshift("Kiwi");
+
+        fruits.sort();
+        fruits.reverse();
+
     }
 
-    //Note: Array indexes start with 0.
 
-    //[0] is the first element. [1] is the second element.
 </script>
 
 </body>
