@@ -1,0 +1,23 @@
+{
+  "name": "jstanfolyam",
+  "version": "1.0.0",
+  "description": "Javascript tanfolyam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbodacs/jstanfolyam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gbodacs/jstanfolyam/issues"
+  },
+  "homepage": "https://github.com/gbodacs/jstanfolyam#readme",
+  "devDependencies": {
+    "eslint": "^6.7.1",
+    "eslint-plugin-react": "^7.16.0"
+  }
+}
