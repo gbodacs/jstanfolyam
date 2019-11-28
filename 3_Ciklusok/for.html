@@ -7,6 +7,8 @@
     <button type="button" onclick="myFunction()">Nyomj meg</button>
 <script>
     function myFunction() {
+        var text = "";
+        var i = 0; 
 
         //The for - statement loops through "everything"
         for (i = 0; i < 5; i++) {
@@ -47,6 +49,9 @@
             text += "The number is " + i;
             i++;
         } while (i < 10);
+
+        console.log( Number(i) + 1 );
+        console.log( String(i) + 1 );
     }
 
 
