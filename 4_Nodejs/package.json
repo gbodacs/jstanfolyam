@@ -1,0 +1,11 @@
+{
+    "name": "Node hello world application",
+    "description": "Simple Hello World Node.js sample for Azure App Service",
+    "version": "0.1.1",
+    "private": true,
+    "license": "MIT",
+    "author": "BG",
+    "scripts": {
+        "start": "node index.js"
+    }
+}
