@@ -1,17 +1,8 @@
 const express = require('express')
 const app = express()
-const io = require("socket.io")
+const port = 3000
 
-app.set('view engine', 'ejs')
+app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/bimserver', (req, res) => res.send('Hello BIMcloud!'))
 
-app.use(express.static('public'))
-
-app.get('/', (req,res)=> {
-    res.send('hello world!')
-})
-
-server = app.listen(3000)
-
-io.on('connection', (socket) => {
-    console.log('New user connected!')
-})
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
