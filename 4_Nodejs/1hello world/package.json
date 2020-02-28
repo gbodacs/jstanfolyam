@@ -1,5 +1,5 @@
 {
-    "name": "Node hello world application",
+    "name": "Node_hello_world_application",
     "description": "Simple Hello World Node.js sample for Azure App Service",
     "version": "0.1.1",
     "private": true,
