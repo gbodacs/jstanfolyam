@@ -1,18 +1,40 @@
-class Rectangle {
-    constructor(height, width) {
+class Rectangle 
+{
+    var height;
+    var width;
+
+    constructor(height, width) 
+    {
         this.height = height;
         this.width = width;
     }
+
     // Getter
-    get area() {
+    get area() 
+    {
         return this.calcArea();
     }
+
+    set height(h)
+    {
+        if (h==0)
+        {
+            console.log("hibas h ertek!");
+        }
+        this.height = h;
+    }
+
     // Method
-    calcArea() {
+    calcArea() 
+    {
         return this.height * this.width;
     }
 }
 
-const square = new Rectangle(10, 10);
+var square = new Rectangle(10, 10);
+var teglalap = new Rectangle(20, 10);
+
+
+square.height = -22;
 
 console.log(square.area); // 100
