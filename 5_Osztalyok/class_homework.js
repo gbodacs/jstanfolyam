@@ -16,9 +16,14 @@ class Dog extends Animal {
     }
 
     speak() {
+        //super.speak();
         console.log(`${this.name} ugat.`);
     }
 }
 
 let d = new Dog('Bodri');
 d.speak(); // Bodri ugat.
+
+// Hany laba van?
+// Van-e farka?
+// Vizben el-e?
